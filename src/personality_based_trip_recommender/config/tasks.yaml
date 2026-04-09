@@ -1,0 +1,11 @@
+
+analyze_personality:
+  description: "Analyze the user's personality based on the given traits: {personality_traits}."
+  expected_output: "A summary of the user's personality likely characteristics and preferences."
+  agent: personality_analyzer
+
+recommend_trip:
+  description: "Provide trip recommendations based on the analyzed personality."
+  expected_output: "A markdown report with a list of recommended trips and how they match the user's personality traits."
+  agent: trip_recommender
+  context: [analyze_personality]
