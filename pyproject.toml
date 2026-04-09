@@ -1,0 +1,15 @@
+
+[tool.poetry]
+name = "personality_based_trip_recommender"
+version = "0.1.0"
+description = "An agentic app that recommends trips based on user personality."
+authors = ["Your Name <your.email@example.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+crewai = "^0.152.0"
+crewai_tools = "^0.1.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
